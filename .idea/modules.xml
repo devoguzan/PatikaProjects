@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CiftSayiToplam/CiftSayiToplam.iml" filepath="$PROJECT_DIR$/CiftSayiToplam/CiftSayiToplam.iml" />
       <module fileurl="file://$PROJECT_DIR$/IkininKuvveti/IkininKuvveti.iml" filepath="$PROJECT_DIR$/IkininKuvveti/IkininKuvveti.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Kombinasyon/Kombinasyon.iml" filepath="$PROJECT_DIR$/Kombinasyon/Kombinasyon.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/PatikaProjects.iml" filepath="$PROJECT_DIR$/.idea/PatikaProjects.iml" />
       <module fileurl="file://$PROJECT_DIR$/TekSayiBulma/TekSayiBulma.iml" filepath="$PROJECT_DIR$/TekSayiBulma/TekSayiBulma.iml" />
     </modules>
