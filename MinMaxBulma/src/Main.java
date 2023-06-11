@@ -1,27 +1,27 @@
-import java.util.*;
-import java.io.*;
 
-class Main {
-    static Scanner input = new Scanner(System.in);
-
+import java.util.Scanner;
+public class Main {
     public static void main(String[] args) {
-        int counter,sayi,min=0,max=0;
-        System.out.print("Girilecek sayı adedini belirtiniz");
-        counter=input.nextInt();
-        while (counter!=0)
+        Scanner input = new Scanner(System.in);
+
+        int numCount = 1;
+        do {
+            if(numCount <= 0) System.out.println("Geçersiz sayı girdiniz.");
+
+            System.out.print("Kaç adet sayı gireceksiniz : ");
+            numCount = input.nextInt();
+        }while(numCount < 0);
+
+        int maxNum = Integer.MIN_VALUE;
+        int minNum = Integer.MAX_VALUE;
+        for(int i = 0; i < numCount; i++)
         {
-            System.out.print("Sayi değerini giriniz");
-            sayi=input.nextInt();
-            if (sayi>max)
-                max=sayi;
-            else if (sayi<min)
-                min=sayi;
-            counter--;
-
-
+            System.out.print("Sayı girin : ");
+            int currentNum = input.nextInt();
+            if(currentNum > maxNum) maxNum = currentNum;
+            if(currentNum < minNum) minNum = currentNum;
         }
-        System.out.println("En büyük: " + max);
-        System.out.println("En küçük" + min);
 
+        System.out.println("Max sayı : " + maxNum + "\nMin sayı : " + minNum);
     }
 }
